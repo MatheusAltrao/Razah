@@ -10,6 +10,7 @@ const links = document.querySelectorAll('.navigation-page ul li a')
 for (const link of links) {
   link.addEventListener('click', () => {
     menu.classList.remove('show')
+    body.classList.remove('hidden')
   })
 }
 
