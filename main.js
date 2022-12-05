@@ -61,6 +61,11 @@ form.addEventListener('submit', (event) => {
   if (nome === '' || email === "" || title === "" || message === "") {
     textAlert.innerText = "Preencha todos os campos corretamente"
     textAlert.style.color = 'red'
+
+    textAlert.style.opacity = 1
+    setTimeout(function () {
+      textAlert.style.opacity = 0
+    }, 5000)
   } else {
 
 

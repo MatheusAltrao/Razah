@@ -20,6 +20,10 @@ html {
   background: var(--second-color);
 }
 
+a {
+  color: var(--second-color);
+}
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
   border-radius: 10px;
@@ -91,6 +95,8 @@ ion-icon {
   font-size: 30px;
 }
 
+
+
 img {
   height: 100%;
   width: 100%;
@@ -139,6 +145,8 @@ img {
   position: fixed;
   top: 0;
   z-index: 99;
+
+  color: var(--second-color);
 }
 
 #header.active {
@@ -150,20 +158,19 @@ img {
   align-items: center;
   justify-content: space-between;
 
-
 }
 
-#header .container * {
-  color: var(--second-color);
-}
+
 
 .logo h1 {
   font-weight: 900;
+  color: var(--second-color);
 }
 
 
 .navigation-page ul {
   gap: 1rem;
+
 }
 
 
@@ -174,18 +181,13 @@ img {
   background-color: #1f253a;
   display: block;
   transition: all 0.3s ease;
+
 }
 
 .navigation-page ul li a:hover:after {
   width: 100%;
 }
 
-/* ion-icon:hover,
-.button:hover {
-  background-color: #1f253a;
-  color: var(--primary-color);
-}
- */
 
 .navigation-social ul {
   gap: 0.5rem;
@@ -557,17 +559,14 @@ textarea {
   color: var(--primary-color);
 
   border-radius: 8px;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
 
   transition: all 0.3s ease-in-out;
 
   cursor: pointer;
 }
 
-.button-area button:hover {
-  background-color: var(--primary-color);
-  color: var(--second-color);
-}
+
 
 #textAlert {
   height: 100px;
@@ -622,6 +621,35 @@ textarea {
   color: #fff;
 }
 
+@media (width>1100px) {
+
+  .icon:hover,
+  .button:hover {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+  }
+
+
+  .contact .icon:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+  }
+
+
+  .button-area button:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+  }
+
+  .backToTop:hover {
+    background-color: var(--second-color);
+
+  }
+
+  .backToTop:hover ion-icon {
+    color: var(--primary-color);
+  }
+}
 
 @media (width<1000px) {
 
