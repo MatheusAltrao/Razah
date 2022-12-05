@@ -4,7 +4,14 @@ const menu = document.querySelector('.navigation-page')
 const body = document.querySelector('body')
 const header = document.getElementById('header')
 const backToTop = document.getElementById('backToTop')
+const form = document.getElementById('form')
+const links = document.querySelectorAll('.navigation-page ul li a')
 
+for (const link of links) {
+  link.addEventListener('click', () => {
+    menu.classList.remove('show')
+  })
+}
 
 iconMenu.addEventListener('click', () => {
   menu.classList.add('show')
@@ -44,8 +51,6 @@ backToTop.addEventListener('click', () => {
     top: 0
   })
 })
-
-const form = document.getElementById('form')
 
 
 form.addEventListener('submit', (event) => {
